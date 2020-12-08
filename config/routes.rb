@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'restaurants#index'
 
   #   A visitor can see the list of all restaurants.
-  get 'retaurants', to: 'restaurants#index'
+  get 'restaurants', to: 'restaurants#index'
 
   # A visitor can add a new restaurant, and be redirected to the show view of that new restaurant.
   get 'restaurants/new', to: 'restaurants#new'
