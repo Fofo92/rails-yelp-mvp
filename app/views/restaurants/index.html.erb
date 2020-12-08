@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Adress</td>
+      <td>Phone</td>
+      <td>category</td>
+    </tr>
+  </thead>
+
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <td><%= restaurant.name %></td>
+      <td><%= restaurant.address %></td>
+      <td><%= restaurant.phone_number %></td>
+      <td><%= restaurant.category %></td>
+    </tr>
+  <% end %>
+</table>
